@@ -1,0 +1,64 @@
+html{
+    background-color: rgb(175, 233, 175);
+    color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.grid-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 25%, 25%, 25%, 25%;
+        background-color: lightblue;
+        grid-gap: 10px;
+        font-size: 125%;
+}
+header{
+    background-color: rgb(12, 92, 12);
+    border: 4px solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+header img{
+    width: 15rem;
+    height:auto;
+}
+header h1{
+    text-align:right;
+    padding-right: 8px;
+    font-size: 200%;
+}
+nav{
+    background-color:limegreen;
+    border: 4px solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.side{
+    background-color:limegreen;
+    border: 4px solid black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.main{
+    background-color:rgb(0, 59, 0);
+    border: 4px solid black;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+footer{
+    background-color:darkgreen;
+    border: 4px solid black;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
