@@ -6,10 +6,15 @@
     font-family: "Bold";
     src: url("../css/fonts/Nunito-Bold.ttf")
 }
-
+*{
+    zoom: 105%;
+}
 html{
     background-color: white;
     color: black;
+    line-height: 1.6;
+    letter-spacing: 1.2px;
+    font-family: "Default";
 }
 body{
     background-color: whitesmoke;
@@ -32,7 +37,7 @@ body{
     padding-left: 8px;
 }
 header{
-    border-bottom: 4px solid black;
+    border-bottom: 2px solid black;
     grid-column: 1/span 3;
     grid-row: 1;
 }
@@ -41,12 +46,23 @@ header img{
     height:auto;
 }
 header h1{
-    padding-left: 8px;
+    padding-right: 8px;
     font-size: 200%;
+    text-align: right;
+    margin-top: -6%;
 }
 a{
     color: black;
     text-decoration: none;
+}
+#one{
+    background-color: rgb(22, 190, 0);
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#one:hover{
+    background-color: rgb(20, 172, 0);
 }
 .box-1{
     grid-column: 1;
@@ -56,15 +72,31 @@ a{
     text-align: center;
     text-decoration: underline;
 }
+#two{
+    background-color: rgb(43, 170, 212);
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#two:hover{
+    background-color: rgb(40, 158, 197);
+}
 .box-2{
     grid-column: 2;
     grid-row: 2;
-    border-right: 4px solid black;
-    border-left: 4px solid black;
 }
 .box-2 h1{
     text-align: center;
     text-decoration: underline;
+}
+#three{
+    background-color: rgb(255, 186, 58);
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#three:hover{
+    background-color: rgb(255, 167, 4);
 }
 .box-3{
     grid-column: 3;
@@ -74,9 +106,36 @@ a{
     text-align: center;
     text-decoration: underline;
 }
-footer{
-    background-color:#0C8E2E;
-    border-top: 4px solid black;
+.main{
+    background-color: white;
     grid-column: 1/ span 3;
     grid-row: 3;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 80%;
+    background-color:#0C8E2E;
+    color: white;
+    width:125.5%;
+    margin-left: -13%;
+    grid-column: 1/ span 3;
+    grid-row: 4;
+    margin-bottom: 0px;
+}
+footer h2{
+    padding-left:5px;
+}
+
+footer #small{
+    width: 2.4rem;
+    height: auto
+}
+footer img{
+    width: 3rem;
+    height: auto;
+    padding-left: 16px;
+}
+footer td{
+    padding-left: 30px;
 }
