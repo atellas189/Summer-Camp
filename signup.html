@@ -10,31 +10,110 @@
     <body>
         <div class="grid-container">
             <header>
-                <img src="logo/logo2.png">
-                <h1> Summer Camp of Outdoors </h1>
+                <a href="index.html"><img src="logo/logo2.png"></a> <!--clicking logo brings you back to index-->
+                <h1> Mountainside Summer Camp </h1>
             </header>
-            <nav>
-                nav nav nav nav nav nav nav nav 
-                nav nav nav nav nav nav nav nav 
-                nav nav nav nav nav nav nav nav 
-                nav nav nav nav nav nav nav nav 
-                nav nav nav nav nav nav nav nav 
-            </nav>
             <div class="side">
-                side side side side side side 
-                side side side side side side 
-                side side side side side side 
-                side side side side side side 
+                <br>
+                <img src="pictures/review-icon.jpeg" id="icon">
+                <img src="pictures/4.5 stars.png" id="stars">
+                <p>
+                    Mountainside is such a great place to have your kids play outside
+                instead of playing video games all day.
+                </p>
+                <hr>
+                <br>
+                <img src="pictures/review-icon.jpeg" id="icon">
+                <img src="pictures/5-stars.png" id="stars">
+                <p>
+                    This summer camp was so much fun, my son had so much fun!
+                </p>
+                <hr>
+                <img src="pictures/review-icon.jpeg" id="icon">
+                <img src="pictures/4.5 stars.png" id="stars">
+                <p>
+                    Love the variety of the activities and the safety at 
+                    Mountainside.
+                </p>
             </div>
             <div class="main">
-                main main main main main main
-                main main main main main main
-                main main main main main main
-                main main main main main main
-                main main main main main main
+                <form>
+                    <p>Child's Info Here</p>
+                    <input type="text" id="first" name="first" placeholder="First Name">
+                    <br>
+                    <input type="text" id="last" name="last" placeholder="Last Name">
+                    <br>
+                    <label for="gender">Male</label>
+                    <input type="radio" id="gender" name="gender">
+                    <label for="gender">Female</label>
+                    <input type="radio" id="gender" name="gender">
+                    <br>
+                    <label for="age">Age: 5-7</label>
+                    <input type="radio" id="age" name="age">
+                    <label for="age">8-11</label>
+                    <input type="radio" id="age" name="age">
+                    <label for="age">12-15</label>
+                    <input type="radio" id="age" name="age">
+                    <label for="age">15+</label>
+                    <input type="radio" id="age" name="age">
+                    <br>
+                    <p>Parent's Info Here</p>
+                    <label for="mail">Email address:</label>
+                    <br>
+                    <input type="text" id="mail" name="mail" placeholder="example@gmail.com">
+                    <br>
+                    <label for="num">Phone Number:</label>
+                    <br>
+                    <input type="tel" id="num" name="num" placeholder="123-456-7891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <br>
+                    <label for="check"> Will you be taking your child to mountainside?</label>
+                    <br>
+                    <label for="check"> Yes </label>
+                    <input type="checkbox" id="check" name="check">
+                    <label for="check"> No </label>
+                    <input type="checkbox" id="check" name="check">
+                    <br>
+                    <label for="name">Emergency Contact:</label>
+                    <br>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="num">Phone Number:</label>
+                    <input type="tel" id="num" name="num" placeholder="123-456-7891" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <br>
+                    <br>
+                    <input type="submit" onclick="alert('We have collected your info')" value="Sumbit" id="sumbit">
+                </form>
             </div>
             <footer>
-                sign up here sign up here sign up here
+                <table>
+                    <tr>
+                        <td>
+                            <h2>CONNECT WITH US</h2>
+                        </td>
+                        <td>
+                            <h2>MAILING ADDRESS</h2>
+                        </td>
+                        <td>
+                            <h2>CONTACT US</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="pictures/facebook.png" id="small">
+                            <img src="pictures/twitter.png">
+                            <img src="pictures/instagram.png">
+                        </td>
+                        <td>
+                            <p> 2843 W Mountainside Drive </p>
+                            <p> Park City, Utah</p>
+                        </td>
+                        <td>
+                            <p>(602)-387-2267</p>
+                            <p>mtnside@gmail.com</p>
+                        </td>
+                    </tr>
+                </table>
+                <br>
             </footer>
         </div>
     </body>
